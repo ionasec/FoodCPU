@@ -1,0 +1,3 @@
+# Module appengine_drinkcounter
+# RPC service class, partial path of RPC policy file
+foodcpu.client.GreetingService, 7AF1AB2FC880375BC1816DB42D2FE606.gwt.rpc
