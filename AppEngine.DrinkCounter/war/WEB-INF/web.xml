@@ -16,9 +16,19 @@
     <url-pattern>/appengine_drinkcounter/greet</url-pattern>
   </servlet-mapping>
   
-  <!-- Default page to serve -->
+ 
+  <servlet>
+  	<servlet-name>ServiceLogin</servlet-name>
+  	<servlet-class>foodcpu.server.ServiceLoginImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServiceLogin</servlet-name>
+  	<url-pattern>/appengine_drinkcounter/ServiceLogin</url-pattern>
+  </servlet-mapping>
+
+   <!-- Default page to serve -->
   <welcome-file-list>
     <welcome-file>AppEngine_DrinkCounter.html</welcome-file>
   </welcome-file-list>
-
+  
 </web-app>

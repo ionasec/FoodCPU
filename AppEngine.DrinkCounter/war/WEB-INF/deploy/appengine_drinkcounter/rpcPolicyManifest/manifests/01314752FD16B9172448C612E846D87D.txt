@@ -1,0 +1,2 @@
+serviceClass: foodcpu.client.ServiceLogin
+path: CD2BD6F90E016247B3A8C98F32D7FC8E.gwt.rpc
