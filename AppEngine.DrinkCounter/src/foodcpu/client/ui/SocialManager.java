@@ -22,7 +22,7 @@ import foodcpu.client.event.LoginEvent;
 import foodcpu.shared.ConfigStatic;
 import foodcpu.shared.DataDrink;
 
-public class StatsManager extends Composite implements Presenter {
+public class SocialManager extends Composite implements Presenter {
 	private FlexTable flexTable;
 	
 	private static final String SERVER_ERROR = "An error occurred while "
@@ -33,7 +33,7 @@ public class StatsManager extends Composite implements Presenter {
 	private final HandlerManager eventBus;
 	private final Label lblThisIsWhat;
 	
-	public StatsManager(HandlerManager eventBus, ServiceDrinkAsync drinkService) {
+	public SocialManager(HandlerManager eventBus, ServiceDrinkAsync drinkService) {
 		this.eventBus = eventBus;
 		this.drinkService = drinkService;
 
@@ -57,7 +57,7 @@ public class StatsManager extends Composite implements Presenter {
 	 }
 	public void fillTable()
 	{
-		drinkService.getDrinkList(new AsyncCallback<ArrayList<DataDrink>>() {
+		drinkService.getAllDrinkList(new AsyncCallback<ArrayList<DataDrink>>() {
 			public void onSuccess(ArrayList<DataDrink> result) {
 		
 			
@@ -80,6 +80,7 @@ public class StatsManager extends Composite implements Presenter {
 		        	flexTable.setText(i+1,3,drinklist.get(i).getPrice());
 		           
 		        }
+
 		          
 		 }
       

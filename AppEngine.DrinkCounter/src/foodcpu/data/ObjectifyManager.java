@@ -4,6 +4,10 @@ import com.googlecode.objectify.Objectify;
 import com.googlecode.objectify.ObjectifyFactory;
 import com.googlecode.objectify.ObjectifyService;
 
+import foodcpu.shared.DataDrink;
+import foodcpu.shared.DataLocation;
+import foodcpu.shared.DataUser;
+
 
 public class ObjectifyManager{
 	 static {

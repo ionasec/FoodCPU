@@ -1,2 +1,0 @@
-serviceClass: foodcpu.client.GreetingService
-path: 7AF1AB2FC880375BC1816DB42D2FE606.gwt.rpc

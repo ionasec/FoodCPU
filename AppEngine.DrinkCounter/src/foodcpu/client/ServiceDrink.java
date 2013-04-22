@@ -22,11 +22,9 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 
 import foodcpu.shared.DataDrink;
 
-@RemoteServiceRelativePath("ServiceLogin")
-public interface ServiceLogin extends RemoteService {
-	String signin(String name, String password);
-	String signup(String name, String password);
-	String getUserList();
-	String logout();
-	
+@RemoteServiceRelativePath("ServiceDrink")
+public interface ServiceDrink extends RemoteService {
+	DataDrink addDrink(DataDrink contact);
+    ArrayList<DataDrink> getDrinkList();
+    ArrayList<DataDrink> getAllDrinkList();
 }

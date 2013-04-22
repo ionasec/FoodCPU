@@ -1,0 +1,2 @@
+serviceClass: foodcpu.client.ServiceDrink
+path: 2751C13645739F9D1033EA6FA88B41F7.gwt.rpc
